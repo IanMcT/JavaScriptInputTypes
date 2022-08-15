@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<!--
+  Ian McTavish
+  July 21, 2022
+  Input Types
+  -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Input</h1>
+  <p>Here are examples of getting different types of input.</p>
+  <h2>Text</h2>
+  <p>
+    <input type="text" id="textInput" />
+  </p>
+  <p id="textOutput"></p>
+
+  <h2>Paragraphs</h2>
+  <textarea id="paragraphInput" rows=5 cols=20></textarea>
+  <p id="paragraphOutput"></p>
+
+  <h2>Integers</h2>
+  <input type="number" id="intInput">
+  <p id="intOutput"></p>
+
+  <h2>Decimal numbers</h2>
+  <input type="number" id="decInput">
+  <p id="decOutput"></p>
+
+  <h2>Boolean - true/false</h2>
+  <input type="checkbox" id="boolInput"> Check for true
+  <p id="boolOutput"></p>
+
+  <h2>Select from a list</h2>
+  <label for="provinces">Select a province or territory</label>
+  <select id="provinces">
+    <option value = "Alberta">AB</option>
+    <option value="British Columbia">BC</option>
+    <option value="Manitoba">MB</option>
+    <option value="New Brunswick">NB</option>
+    <option value="Newfoundland and Labrador">NL</option>
+    <option value="Nova Scotia">NS</option>
+    <option value="Northwest Territories">NT</option>
+    <option value="Nunavut">NU</option>
+    <option value="Ontario" selected>ON</option>
+    <option value="Prince Edward Island">PE</option>
+    <option value="Quebec">QC</option>
+    <option value="Saskatchewan">SK</option>
+    <option value="Yukon">YT</option>
+  </select>
+  <p id="provincesOutput"></p>
+  <br /><br />
+  <button onclick="getInput()">Get output </button>  
+  <script src="script.js"></script>
+
+ <!--
+This script places a badge on your repl's full-browser view back to your repl's cover page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green, teal, blue, blurple, magenta, pink!
+-->
+<script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>
